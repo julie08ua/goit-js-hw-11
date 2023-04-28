@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,8 +8,21 @@
     <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <p></p>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+    <section>
+      <div class="form-wrapper">
+        <form class="search-form" id="search-form">
+          <input type="text" name="searchQuery" autocomplete="off" placeholder="Search images..." />
+          <button type="submit">Search</button>
+        </form>
+    </div>
+    
+    <div class="gallery">
+      <!-- Картки зображень -->
+    </div>
+    <p class="last-message"></p>
+    <div class="load-more-wrapper">
+      <button type="button" class="load-more">Load more</button>
+    </div>
+    </section>
   </body>
 </html>
